@@ -1,0 +1,70 @@
+body{
+  background: linear-gradient(#dbbcd7, #764f6e);
+}
+
+h1 {
+  padding: 24px;
+  background: linear-gradient(#87a187, #3c553c);
+  font-size: xx-large;
+  color: #f2f2f2;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.image {
+  opacity: 50%;
+  text-align: center;
+}
+
+.paragraph {
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes fadeSlide {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.head {
+  padding: 24px;
+  border-radius: 5px;
+  animation: fadeSlide 8s;
+  animation-delay: 500ms;
+}
+
+@keyframes slideGrow {
+  from {
+    transform: translateX(10000px) scale(1);
+    opacity: 1;
+  }
+
+  to {
+    transform: translateZ(0) scale(1);
+  }
+}
+
+.banner {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  animation: slideGrow 2s ease-in;
+  animation-delay: 300ms;
+}
+
+h2 {
+  background: linear-gradient(#87a187, #3c553c);
+  height: 200px;
+  text-align: center;
+  text-overflow: auto;
+  color: rgb(228, 228, 228);
+  padding: 20px;
+  margin: 10px;
+  border: 20px;
+  border-radius: 10px;
+}
